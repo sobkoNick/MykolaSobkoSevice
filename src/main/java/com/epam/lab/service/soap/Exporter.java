@@ -8,11 +8,6 @@ import javax.xml.ws.Endpoint;
 public class Exporter {
     public static void main(String[] args) {
         Endpoint.publish("http://localhost:8090/calc", new CalcServiceImpl());
-        System.out.println("Calc SOAP Server started");
+        System.out.println("Calc SOAP Server started on host http://localhost:8090/calc");
     }
-
-//    public static void main(String[] args) {
-//        CalcServiceImpl calcService = new CalcServiceImpl();
-//        System.out.println(calcService.plus(2,2));
-//    }
 }
